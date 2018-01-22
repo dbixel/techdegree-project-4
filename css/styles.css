@@ -1,3 +1,26 @@
-ul {
-  list-style-type: none;
+
+img {
+  margin: 30px;
+}
+
+
+.light-box {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+/********************************
+Media Queries
+********************************/
+
+@media (min-width: 769px) {
+
+}
+
+@media (min-width: 1025px) {
+
+ .container {
+   max-width: 1050px;
+   margin: auto;
+ }
 }
