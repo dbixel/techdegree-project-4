@@ -1,10 +1,18 @@
-
-img {
-  margin: 30px;
+input {
+  border-radius: 5px;
+  padding: 10px;
+  width: 45%;
 }
 
+.search-input {
+  text-align: center;
+  /*margin: 0 auto;*/
+  margin-top: 100px;
+  margin-bottom: 10px;
+}
 
 .light-box {
+    justify-content: center;
     display: flex;
     flex-wrap: wrap;
   }
@@ -19,7 +27,12 @@ Media Queries
 
 @media (min-width: 1025px) {
 
+  img {
+    margin: 25px;
+  }
+
  .container {
+
    max-width: 1050px;
    margin: auto;
  }
