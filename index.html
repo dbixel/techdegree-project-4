@@ -3,54 +3,66 @@
   <head>
     <title>Interactive Photo Gallery</title>
     <meta name=viewport content="width=device-width, initial-scale=1">
-    <link href="css/normalize.css" rel=stylesheet>
-    <link href="css/styles.css" rel=stylesheet>
+    <link rel="stylesheet" href="css/normalize.css" >
+    <link type="text/css" rel="stylesheet" href="lightGallery-master/dist/css/lightGallery.css" />
+    <link rel="stylesheet" href="css/styles.css" >
   </head>
   <body>
     <div class="container">
-      <div class="search-input">
-      <input type="search" id="imgSearch" placeholder="Search">
+      <div id="search-input">
+        <input type="search" id="imgSearch" placeholder="Search images">
       </div>
-      <div class="light-box">
-        <div>
+      <div id="lightgallery">
+        <a href="img/photos/01.jpg">
           <img src="img/thumbnails/01.jpg" alt="Hay Bales">
-        </div>
-        <div>
+        </a>        
+        <a href="img/photos/02.jpg">
           <img src="img/thumbnails/02.jpg" alt="Lake">
-       </div>
-         <div>
+        </a>
+        <a href="img/photos/03.jpg">
           <img src="img/thumbnails/03.jpg" alt="Canyon">
-        </div>
-        <div>
+        </a>
+        <a href="img/photos/04.jpg">
           <img src="img/thumbnails/04.jpg" alt="Iceberg">
-        </div>
-        <div>
+        </a>
+        <a href="img/photos/05.jpg">
           <img src="img/thumbnails/05.jpg" alt="Desert">
-        </div>
-         <div>
+        </a>
+        <a href="img/photos/06.jpg">
           <img src="img/thumbnails/06.jpg" alt="Fall">
-         </div>
-         <div>
+        </a>
+        <a href="img/photos/07.jpg">
           <img src="img/thumbnails/07.jpg" alt="Plantation">
-         </div>
-         <div>
+        </a>
+        <a href="img/photos/08.jpg">
           <img src="img/thumbnails/08.jpg" alt="Dunes">
-         </div>
-         <div>
+        </a>
+        <a href="img/photos/09.jpg">
           <img src="img/thumbnails/09.jpg" alt="Countryside Lanes">
-         </div>
-         <div>
+        </a>
+        <a href="img/photos/10.jpg">
           <img src="img/thumbnails/10.jpg" alt="Sunset">
-        </div>
-        <div>
+        </a>
+        <a href="img/photos/11.jpg">
           <img src="img/thumbnails/11.jpg" alt="Cave">
-        </div>
-        <div>
+        </a>
+        <a href="img/photos/12.jpg">
           <img src="img/thumbnails/12.jpg" alt="Bluebells">
-        </div>
+        </a>
       </div>
     </div>
     <footer>
     </footer>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="lightGallery-master/dist/js/lightgallery.min.js"></script>
+    <script src="lightGallery-master/modules/lg-thumbnail.min.js"></script>
+    <script src="lightGallery-master/modules/lg-fullscreen.min.js"></script>
+    <script src="js/main.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+          $("#lightgallery").lightGallery();
+      });
+    </script>
+
   </body>
 </html>
