@@ -12,57 +12,102 @@
       <div id="search-input">
         <input type="search" id="imgSearch" placeholder="Search images">
       </div>
-      <div id="lightgallery">
-        <a href="img/photos/01.jpg">
-          <img src="img/thumbnails/01.jpg" alt="Hay Bales">
-        </a>        
-        <a href="img/photos/02.jpg">
-          <img src="img/thumbnails/02.jpg" alt="Lake">
-        </a>
-        <a href="img/photos/03.jpg">
-          <img src="img/thumbnails/03.jpg" alt="Canyon">
-        </a>
-        <a href="img/photos/04.jpg">
-          <img src="img/thumbnails/04.jpg" alt="Iceberg">
-        </a>
-        <a href="img/photos/05.jpg">
-          <img src="img/thumbnails/05.jpg" alt="Desert">
-        </a>
-        <a href="img/photos/06.jpg">
-          <img src="img/thumbnails/06.jpg" alt="Fall">
-        </a>
-        <a href="img/photos/07.jpg">
-          <img src="img/thumbnails/07.jpg" alt="Plantation">
-        </a>
-        <a href="img/photos/08.jpg">
-          <img src="img/thumbnails/08.jpg" alt="Dunes">
-        </a>
-        <a href="img/photos/09.jpg">
-          <img src="img/thumbnails/09.jpg" alt="Countryside Lanes">
-        </a>
-        <a href="img/photos/10.jpg">
-          <img src="img/thumbnails/10.jpg" alt="Sunset">
-        </a>
-        <a href="img/photos/11.jpg">
-          <img src="img/thumbnails/11.jpg" alt="Cave">
-        </a>
-        <a href="img/photos/12.jpg">
-          <img src="img/thumbnails/12.jpg" alt="Bluebells">
-        </a>
+      <div id="caption1" style="display:none">
+          <h4>Hay Bales</h4><p>I love hay bales. Took this snap on a drive through the countryside past some straw fields.</p>
       </div>
+      <div id="caption2" style="display:none">
+          <h4>Lake</h4><p>The lake was so calm today. We had a great view of the snow on the mountains from here.</p>
+      </div>
+      <div id="caption3" style="display:none">
+          <h4>Canyon</h4><p>I hiked to the top of the mountain and got this picture of the canyon and trees below.</p>
+      </div>
+      <div id="caption4" style="display:none">
+          <h4>Iceberg</h4><p>It was amazing to see an iceberg up close, it was so cold but didn’t snow today.</p>
+      </div>
+      <div id="caption5" style="display:none">
+          <h4>Desert</h4><p>The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons.</p>
+      </div>
+      <div id="caption6" style="display:none">
+          <h4>Fall</h4><p>Fall is coming, I love when the leaves on the trees start to change color.</p>
+      </div>
+      <div id="caption7" style="display:none">
+          <h4>Plantation</h4><p>I drove past this plantation yesterday, everything is so green!</p>
+      </div>
+      <div id="caption8" style="display:none">
+          <h4>Dunes</h4><p>My summer vacation to the Oregon Coast. I love the sandy dunes</p>
+      </div>
+      <div id="caption9" style="display:none">
+          <h4>Countryside Lane</h4><p>We enjoyed a quiet stroll down this countryside lane.</p>
+      </div>
+      <div id="caption10" style="display:none">
+          <h4>Sunset</h4><p>Sunset at the coast! The sky turned a lovely shade of orange.</p>
+      </div>
+      <div id="caption11" style="display:none">
+          <h4>Cave</h4><p>I did a tour of a cave today and the view of the landscape below was breathtaking.</p>
+      </div>
+      <div id="caption12" style="display:none">
+          <h4>Bluebells</h4><p>I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in.</p>
+      </div>
+    <div id="lightgallery">
+
+      <a href="img/photos/01.jpg" data-sub-html="#caption1">
+        <img src="img/thumbnails/01.jpg">
+      </a>
+      <a href="img/photos/02.jpg" data-sub-html="#caption2">
+          <img src="img/thumbnails/02.jpg">
+      </a>
+      <a href="img/photos/03.jpg" data-sub-html="#caption3">
+          <img src="img/thumbnails/03.jpg">
+      </a>
+      <a href="img/photos/04.jpg" data-sub-html="#caption4">
+          <img src="img/thumbnails/04.jpg" />
+      </a>
+      <a href="img/photos/05.jpg" data-sub-html="#caption5">
+          <img src="img/thumbnails/05.jpg" />
+      </a>
+      <a href="img/photos/06.jpg" data-sub-html="#caption6">
+          <img src="img/thumbnails/06.jpg" />
+      </a>
+      <a href="img/photos/07.jpg" data-sub-html="#caption7">
+          <img src="img/thumbnails/07.jpg" />
+      </a>
+      <a href="img/photos/08.jpg" data-sub-html="#caption8">
+          <img src="img/thumbnails/08.jpg" />
+      </a>
+      <a href="img/photos/09.jpg" data-sub-html="#caption9">
+          <img src="img/thumbnails/09.jpg" />
+      </a>
+      <a href="img/photos/10.jpg" data-sub-html="#caption10">
+          <img src="img/thumbnails/10.jpg" />
+      </a>
+      <a href="img/photos/11.jpg" data-sub-html="#caption11">
+          <img src="img/thumbnails/11.jpg" />
+      </a>
+      <a href="img/photos/12.jpg" data-sub-html="#caption12">
+          <img src="img/thumbnails/12.jpg" />
+      </a>
+
+    </div>
     </div>
     <footer>
     </footer>
+
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="lightGallery-master/dist/js/lightgallery.min.js"></script>
     <script src="lightGallery-master/modules/lg-thumbnail.min.js"></script>
     <script src="lightGallery-master/modules/lg-fullscreen.min.js"></script>
     <script src="js/main.js"></script>
     <script type="text/javascript">
-      $(document).ready(function() {
-          $("#lightgallery").lightGallery();
-      });
+    $(document).ready(function() {
+        $("#lightgallery").lightGallery({
+          width: '1000px',
+          mode: 'lg-fade',
+          speed: 900,
+          thumbnail: true,
+          animateThumb: false,
+          showThumbByDefault: false,
+          hideBarsDelay: 2000
+        });
+    });
     </script>
-
-  </body>
 </html>
