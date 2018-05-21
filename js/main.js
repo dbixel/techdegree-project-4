@@ -27,5 +27,5 @@
     $search.on('input', filter);
   } else {
     $search.on('keyup', filter);
-  }
+}
 }());
